@@ -1,0 +1,154 @@
+
+.container {
+    
+    height:1px ;
+    width: auto;  
+    min-width: 1200px; 
+    text-align: center;
+    align-items: center;
+    
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+ button{
+    text-align: center;
+    height: 50px;
+    width: auto;
+     cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    margin: 15px 15px;
+    padding: 5px 5px;
+    border-radius: 15px;
+   
+    font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p{
+    
+    font-weight: 1500;
+    font-size: 13px;
+    color: rgb(244, 2, 244);
+}
+h4{
+    text-align: center
+    ;
+    color: green;
+    box-shadow: 0 0 20px 0 rgb(00, 255, 00);
+    font-size: 30px;
+}
+ .option{
+    
+    margin: 20px 120px;
+   text-align: center;
+    
+    width: auto; 
+    
+ }
+
+    
+
+
+.option1{
+  background: gold;
+  
+}
+.option2{
+  background:greenyellow;
+}
+.option3{
+background: blanchedalmond;
+}
+.option4{
+    background: rgb(118, 197, 234);
+}
+.questioncontainer{
+    
+    width: auto;
+    
+margin-top:60px;
+text-align: center;
+}
+        .text-container h1
+        ,h2,button,p {
+            display: inline-block;
+            opacity: 0;
+            animation: reveal 2s forwards;
+            text-align: center;
+            align-items: center;
+        }
+      .text-container h1{
+        text-shadow:0 0 10px #ffd700;   
+      }
+    
+.headlineee{
+    
+    color: #ffd700;
+    box-shadow: 0 0 0 0 #ffd700;
+    border-color: #ff00ff;
+}
+
+
+@keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+}
+
+.hide {
+    display: none; /* Initially hide the letter */
+}
+body{
+    background: black;
+}
+h1{
+padding-top: 200px;
+}
+h2{
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.containerb{
+    position:relative;
+    width:100%;
+    height: auto;
+    overflow:hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #ff00ff;
+    margin:0 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #ff00ff, /*กำหนดการเรืองเเสงของ element */
+    0 0 50px #ff00ff, 0 0 100px #ff00ff;
+    animation: animate 15s linear infinite;
+    animation-duration:calc(60s/var(--i));
+
+}
+@keyframes animate{
+    0%{
+        transform:translateY(200vh) scale(0);
+    }
+    100%{
+        transform:translateY(-10vh) scale(1);
+    }
+}
+
+
+
+   
